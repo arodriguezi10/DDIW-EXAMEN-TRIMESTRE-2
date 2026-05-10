@@ -1,0 +1,23 @@
+ul li:first-child a{
+    color: red;
+    text-decoration: none;
+}
+
+ul li:nth-child(2) a:hover{
+    color: white;
+    background-color: red;
+}
+
+ul li:nth-child(3) a:active{
+    color: orange;
+    text-decoration: none;
+}
+
+ul li:nth-child(4) a:visited{
+    color: green;
+    text-decoration: none;
+}
+
+ul li:last-child a:focus{
+    color: rgb(109, 109, 236);
+}   

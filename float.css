@@ -1,0 +1,37 @@
+.a {
+  float: left;
+  padding: 10px;
+}
+.a div {
+  height: 100px;
+  width: 100px;
+  background-color: #2980b9;
+}
+.b {
+  float: right;
+  padding: 10px;
+}
+.b div {
+  height: 100px;
+  width: 100px;
+  background-color: #17a589;
+}
+.c {
+  float: right;
+  padding: 10px;
+}
+.c div {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+.d {
+  float: none;
+  clear: both;
+  padding: 10px;
+}
+.d div {
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+}

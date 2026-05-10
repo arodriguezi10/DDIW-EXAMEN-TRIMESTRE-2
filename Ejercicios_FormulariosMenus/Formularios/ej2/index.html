@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../ej2/style.css">
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+
+    <hr>
+
+    <h3>Nombre y apellidos</h3>
+    <form class="form1">
+        <input type="text" name="nombre" id="linea1"><br>
+        <label for="nombre" id="na">Nombre</label><br><br>
+
+        <input type="text" name="apellidos" id="linea1"><br>
+        <label for="apellido1" id="na">Primer apellido</label><br><br>
+
+        <input type="text" name="apellidos" id="linea1"><br>
+        <label for="apellido2" id="na">Segundo apellido</label><br><br>
+    </form>
+
+    <hr>
+
+    <h3>Dirección</h3>
+
+    <form class="form2">
+        <input type="text" name="casa" id="casa"><br>
+        <label for="casa" id="direccion">Calle, número, piso, puerta</label><br><br>
+
+        <input type="number" name="cp" id="cp"><br>
+        <label for="cp" id="direccion">Código postal</label><br><br>
+
+        <select id="provincia">
+            <option value=""></option>
+            <option value="provincia1">Provincia 1</option>
+            <option value="provincia2">Provincia 2</option>
+        </select><br>
+        <label for="provincia" id="direccion">Provincia</label><br><br>
+        
+        <input type="text" name="municipio" id="municipio"><br>
+        <label for="municipio" id="direccion">Municipio</label><br><br>
+
+        <select id="pais">
+            <option value=""></option>
+            <option value="pais1">Pais 1</option>
+            <option value="pais2">Pais 2</option>
+        </select><br>
+        <label for="pais" id="direccion">Pais</label><br><br>
+    </form>
+
+    <hr>
+
+    <h3>Email</h3>
+    <form class="form3">
+        <input type="email" name="email" id="email">
+    </form>
+    <hr>
+
+    <h3>Teléfono</h3>
+
+    <form class="form4">
+        <input type="number" name="fijo" id="fijo"><br>
+        <label for="fijo" id="tel">Fijo</label><br><br>
+
+        <input type="number" name="movil" id="movil"><br>
+        <label for="movil" id="tel">Móvil</label><br><br>
+    </form>
+
+    <hr>
+
+    <input type="button" value="Registrarse">
+</body>
+</html>

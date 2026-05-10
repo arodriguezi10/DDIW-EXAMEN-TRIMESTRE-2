@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+h1{
+    border: 2px solid #00F;     
+    margin-bottom: 30px;
+}
+
+h2{
+    border: 2px solid #AAA;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+ul{
+    border: 2px solid #0F0;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+p{
+    margin-bottom: 15px;
+    padding: 5px;
+}

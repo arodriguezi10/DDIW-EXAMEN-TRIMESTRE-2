@@ -1,0 +1,67 @@
+tr:nth-child(odd) {
+  color: green;
+}
+tr:nth-child(even) {
+  color: red;
+}
+table {
+  border-collapse: collapse;
+}
+tr td,
+tr th {
+  border: 1px solid black;
+}
+
+
+
+
+
+ul li:active {
+  cursor: crosshair;
+  background-color: #228965;
+}
+ul li:not(:active) {
+  background-color: white;
+}
+
+
+
+
+
+
+a:hover {
+  /*Elemento apuntador pasa por encima*/
+  text-decoration: overline;
+}
+a:active {
+  /*Se activa cuando el usuario pulsa el elemento*/
+  background-color: yellow;
+}
+a:link {
+  /*No visitado por el usuario*/
+  color: green;
+}
+a:visited {
+  /*Visitado por el usuario*/
+  color: brown;
+}
+
+
+
+
+
+
+
+p::first-line {
+  color: green;
+}
+h2::first-letter {
+  color: blue;
+}
+p::after {
+  content: " - Aloja more don";
+  color: red;
+}
+p::before {
+  content: "*. ";
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../formulario/s.css">
+</head>
+
+<body>
+    <forma ction="formulario-contacto.php" method="post">
+        <input name="nombre" type="text" placeholder="Nombre" maxlength="30" pattern="[a-zA-Z0-9]+" requiredautofocus />
+        <input name="email" type="email" placeholder="Correoelectrónico" required />
+        <textarea name="consulta" placeholder="¿Cuál eselmotivodetuconsulta?" rows="6" required></textarea>
+        <button id="enviar" name="enviar" type="submit" class="btn">ENVIAR</button>
+        </form>
+
+</html>

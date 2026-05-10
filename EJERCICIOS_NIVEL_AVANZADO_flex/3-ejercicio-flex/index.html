@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Flexbox - Full Viewport</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fuente-lobster">
+
+    <header class="header">
+        <h1>Ejemplo de Maquetación con Flex</h1>
+        <p>By @yo para @lesagora</p>
+    </header>
+
+    <main class="layout-principal">
+        
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section class="contenedor-galeria">
+            <div class="fila">
+                <article class="tarjeta tarjeta-principal">
+                    <div class="imagen-box">
+                        <img src="./img/img1.jpg" alt="Cielo">
+                    </div>
+                    <p class="texto-descripcion">
+                        Loren ipsum dolor sit amet consectetur adipisicing elit. Iure harum dolore expedita recusandae omnis obcaecati praesentium numquam, labore ad libero placeat saepe nemo possimus. Eligendi, magni culpa? Voluptate, eligendi cum.
+                    </p>
+                </article>
+
+                <article class="tarjeta tarjeta-estandar">
+                    <div class="imagen-box">
+                        <img src="./img/img2.jpg" alt="Cielo">
+                    </div>
+                    <p class="pie-foto">Una image bonita de un cielo</p>
+                </article>
+            </div>
+
+            <div class="fila">
+                <article class="tarjeta tarjeta-estandar">
+                    <div class="imagen-box">
+                        <img src="./img/img3.jpg" alt="Cielo">
+                    </div>
+                    <p class="pie-foto">Una image bonita de un cielo</p>
+                </article>
+                <article class="tarjeta tarjeta-estandar">
+                    <div class="imagen-box">
+                        <img src="./img/img4.jpg" alt="Cielo">
+                    </div>
+                    <p class="pie-foto">Una image bonita de un cielo</p>
+                </article>
+                <article class="tarjeta tarjeta-estandar">
+                    <div class="imagen-box">
+                        <img src="./img/img5.jpg" alt="Cielo">
+                    </div>
+                    <p class="pie-foto">Una image bonita de un cielo</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <p>C/ Principal</p>
+            <p>Cáceres</p>
+        </div>
+        <p class="footer-creditos">Todas las fotos realizadas por @ge bajo la licencia CC BY-SA</p>
+        <div class="footer-redes">
+            <div class="red-box snapchat"><img src="./img/snapchat.jpg" alt="snapchat"></div>
+            <div class="red-box facebook"><img src="./img/facebook.jpg" alt="facebook"></div>
+            <div class="red-box twitter"><img src="./img/twitter.jpg" alt="x"></div>
+        </div>
+    </footer>
+
+</body>
+</html>

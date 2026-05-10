@@ -1,0 +1,24 @@
+*{
+    font-family: 'Arial', 'Verdana';
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-variant: small-caps; /*Para poner las letras en versálitas*/
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-variant: small-caps; /*Para poner las letras en versálitas*/
+    font-style: italic; /*Para poner las letras en cursiva*/
+}
+
+li{
+    font-weight: bold;
+}
+
+strong{
+    font-weight: normal;
+}

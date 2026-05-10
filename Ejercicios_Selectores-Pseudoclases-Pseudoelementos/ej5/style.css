@@ -1,0 +1,28 @@
+caption{
+    color: red;
+}
+
+table{
+    border-color: black;
+}
+
+th::first-letter{
+    font-size: 30px;
+}
+
+tr td:first-child{
+    background-color: green;
+}
+
+[colspan="5"]{
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+input{
+    width: 21vw;
+    height: 2vh;
+    padding: 8px;
+    border-color: red;
+}

@@ -1,0 +1,22 @@
+#divespecial{
+    background-color: rgb(216, 212, 212);
+    width: 12vw;
+    border: 1px solid red;
+}
+
+#pespecial{
+    width: 19vw;
+    border: 1px solid rgb(36, 226, 99);
+}
+
+#otroespecial{
+    width: 18vw;
+    border: 1px solid grey;
+    justify-self: center;
+}
+
+span{
+    background-color: grey;
+    border: 2px solid black;
+    color:white
+}

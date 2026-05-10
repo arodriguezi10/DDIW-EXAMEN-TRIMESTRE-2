@@ -1,0 +1,26 @@
+/* 1. Centramos el contenido en línea del header/nav */
+.main_container header {
+  text-align: center;
+  width: 100%;
+}
+
+/* 2. Limpiamos el comportamiento por defecto de la lista */
+.main_container nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 3. Convertimos los elementos de lista en bloques en línea */
+.main_container nav li {
+  display: inline-block;
+  margin: 0 15px; /* Define la separación entre los botones */
+}
+
+/* 4. Buenas prácticas de usabilidad para los enlaces */
+.main_container nav a {
+  display: block; /* Aumenta el área de clic del enlace */
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}

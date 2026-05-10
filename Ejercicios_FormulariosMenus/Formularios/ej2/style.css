@@ -1,0 +1,98 @@
+body{
+    padding: 5px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    text-align: right;  
+    vertical-align: top; 
+    padding-right: 10px; 
+    font-weight: bold;   
+    width: 13%;
+    float: left;
+}
+
+.form1 input[name="nombre"]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 15%;
+    margin-top: 50px;
+}
+
+.form1 input[name="apellidos"]{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 20%;
+    margin-left: 13.6%;
+}
+
+#na{
+    margin-left: 13.5%;
+}
+/*----------*/
+
+.form2 input[name="casa"]{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 20%;
+    margin-top: 50px;
+}
+
+.form2 input[name="cp"]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 7%;
+    margin-left: 13.6%;
+}
+
+.form2 select[id="provincia"]{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 7%;
+    margin-left: 13.6%;
+}
+
+.form2 input[id="municipio"]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 15%;
+    margin-left: 13.6%;
+}
+
+.form2 select[id="pais"]{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 10%;
+    margin-left: 13.6%;
+}
+
+#direccion{
+    margin-left: 13.5%;
+}
+
+/*-----*/
+.form3 input[id="email"]{
+    border:none;
+    border-bottom: 1px solid black;
+    width: 20%;
+    margin-top: 50px;
+}
+
+/*-----*/
+.form4 input[id="fijo"]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 10%;
+    margin-top: 50px;
+}
+
+.form4 input[id="movil"]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 10%;
+}
+
+#tel{
+    margin-left: 13.5%;
+}

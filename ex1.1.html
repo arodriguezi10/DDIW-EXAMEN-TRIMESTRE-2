@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="ex1.css" type="text/css">
+</head>
+
+<body>
+<!--Contenedor-->
+<div class="main_container">
+        <header> 
+            <nav>
+                <ul>
+                    <li><a href="ex1.html">Inicio</a></li>
+                    <li><a href="ex1.1.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main> <!--/Menú Principal-->
+     <form action="formulario-contacto.php" method="post">
+
+        <input name="nombre" type="text" placeholder="Nombre" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus/>
+        <input name="email" type="email" placeholder="Correo electrónico" required />
+        <textarea name="consulta" placeholder="¿Cuál es el motivo de tu consulta?" rows="6" required></textarea>
+        <button id="enviar" name="enviar" type="submit">ENVIAR</button>
+    
+    </form> 
+ </div> <!--/Contenedor-->
+
+
+</body>
+ <footer>
+        <h2>¿Tienes una sugerencia o duda?</h2>
+        <p>Rellena el formulario y nos pondremos en contacto contigo lo antes posible</p>
+    </footer>
+</html>

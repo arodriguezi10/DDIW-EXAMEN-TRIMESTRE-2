@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 140px;
+    background-color: #F7F3F3;
+    margin: 10px;
+}
+
+article img {
+    padding: 20px;
+    width: 100px;
+}
+
+.datos-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    padding: 20px;
+    width: 190px;
+}
+
+.borrar {
+    order: 2;
+    padding: 0 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: -10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.nombre {
+    order: 1;
+    font-weight: bold;
+}
+
+.precio {
+    order: 3;
+    width: 100%;
+    text-align: right;
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.colores {
+    order: 4;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 5px;
+    list-style: none;
+}
+
+.colores li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: green;
+}
+
+.colores li:nth-child(1) { background-color: red; }
+.colores li:nth-child(2) { background-color: blue; }
+.colores li:nth-child(3) { background-color: yellow; }
+.colores li:nth-child(4) { background-color: saddlebrown; }
+.colores li:nth-child(5) { background-color: darkviolet; }
+.colores li:nth-child(6) { background-color: deeppink; }
