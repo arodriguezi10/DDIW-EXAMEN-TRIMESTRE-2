@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+header {
+    background: #000000;
+    height: 4rem;
+    display: grid;
+    /* place-content centra el nav completo tanto vertical como horizontalmente */
+    place-content: center;
+}
+
+nav ul {
+    display: grid;
+    /* grid-auto-flow: column genera las columnas automáticamente sin definir tamaños */
+    grid-auto-flow: column;
+    gap: 80px; 
+    list-style: none;
+}
+
+/* Al usar Grid en el padre (ul) con gap, los li ya no necesitan márgenes ni display: inline */
+ul li {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #a9065d;
+}
+
+main {
+    padding: 20px;
+}
+
+.imageninicio {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.texto1 {
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    /* justify-items centra los elementos hijos (textos) en el eje horizontal */
+    justify-items: center;
+}
+
+p:nth-child(3) {
+    width: 80%;
+}
+
+.texto1 p {
+    padding: 10px;
+}
+
+.texto1 h1 {
+    color: black;
+}
+
+footer {
+    background: #0b0a0a;
+    height: 10vh;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    color: #ccc;
+}
+
+footer p {
+    padding: 5px;
+}
+
+/* --- Media Query --- */
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    nav ul {
+        /* Al cambiar el flujo a fila, los enlaces se apilan verticalmente de forma automática */
+        grid-auto-flow: row;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Patrón Sticky Footer con CSS Grid */
+  body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #000000;
+    display: grid;
+    /* Fila 1: Header (automático), Fila 2: Formulario (ocupa el resto), Fila 3: Footer (automático) */
+    grid-template-rows: max-content 1fr max-content; 
+    justify-items: center; /* Centra el formulario horizontalmente */
+    align-items: start; /* Evita que el formulario se estire verticalmente ocupando todo el 1fr */
+    min-height: 100vh;
+  }
+  
+  header {
+    background: #000000;
+    height: 4rem;
+    width: 100%;
+    display: grid;
+    place-content: center; /* Centrado absoluto del menú */
+  }
+  
+  /* Reestructuración del menú usando Grid */
+  nav ul {
+    display: grid;
+    grid-auto-flow: column; /* Crea columnas automáticas para los enlaces */
+    gap: 80px; /* Sustituye a los margin-left y margin-right */
+    list-style: none;
+  }
+  
+  ul li {
+    display: block; /* Anulamos el display: inline antiguo */
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    color: #a9065d;
+  }
+  
+  /* Contenedor del formulario */
+  form {
+    width: 60%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    /* Al no definir columnas, Grid apila todo en filas automáticamente (igual que flex-direction: column) */
+    padding: 45px;
+    margin: 40px 0;
+    text-align: left; 
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  form p {
+    line-height: 1.5;
+  }
+  
+  /* Técnica de bloque para forzar saltos de línea sin cambiar el HTML */
+  input[type="text"],
+  input[type="number"],
+  select {
+    display: block;
+    width: 100%;
+    border: 1px solid #dc3545; /* Borde rojo */
+    padding: 10px;
+    border-radius: 4px;
+    font-family: inherit;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  select:focus {
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+  }
+  
+  /* Lista sin fondo gris y con viñetas redondas estándar */
+  .formulario1 {
+    background-color: transparent;
+    list-style-type: disc;
+    padding-left: 40px;
+    margin: 20px 0;
+  }
+  
+  .formulario1 li {
+    display: list-item;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  /* Botón de envío */
+  input[type="submit"] {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    display: block;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #c82333;
+  }
+  
+  footer {
+    background: #0b0a0a;
+    padding: 30px 20px;
+    width: 100%; /* Asegura que ocupe todo el ancho de su fila en el Grid del body */
+    display: grid;
+    place-content: center; /* Centra el texto del footer */
+  }
+  
+  footer p {
+    color: #ccc;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  
+  /* Media Query para adaptación a móviles */
+  @media (max-width: 600px) {
+    form {
+      width: 90%;
+      padding: 20px;
+    }
+    
+    nav ul {
+      grid-auto-flow: row; /* Apila el menú verticalmente en móviles */
+      gap: 15px;
+    }
+    
+    header {
+      height: auto;
+      padding: 20px 0;
+    }
+  }

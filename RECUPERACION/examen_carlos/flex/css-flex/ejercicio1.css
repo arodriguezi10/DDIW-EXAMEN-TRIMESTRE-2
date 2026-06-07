@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+header {
+  background: #000000;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+ul li {
+  display: inline;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #a9065d;
+}
+
+/* Contenedor del formulario con la caja y box-shadow conservados */
+form {
+  width: 60%; /* Ajustado ligeramente para mejor lectura */
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+  margin: 40px 0;
+  text-align: left; /* Asegura que los textos sueltos se alineen a la izquierda */
+}
+
+/* Títulos sin fondo y centrados según la imagen */
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Técnica para separar los textos sueltos de los inputs sin tocar el HTML */
+form p {
+  line-height: 1.5;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  display: block; /* Obliga al input a bajar a la siguiente línea */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  border: 1px solid #dc3545; /* Borde rojo */
+  padding: 10px;
+  border-radius: 4px;
+  font-family: inherit;
+  outline: none;
+  margin-top: 5px; /* Separa el input del texto superior */
+  margin-bottom: 15px; /* Separa el input del texto inferior */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+/* Restauración del estilo de lista estándar */
+.formulario1 {
+  background-color: transparent; /* Eliminado el fondo gris */
+  list-style-type: disc;
+  padding-left: 40px;
+  margin: 20px 0;
+}
+
+.formulario1 li {
+  display: list-item; /* Sobrescribe el display: inline del header */
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Botón ancho y rojo */
+input[type="submit"] {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  display: block;
+}
+
+input[type="submit"]:hover {
+  background-color: #c82333;
+}
+
+footer {
+  background: #0b0a0a;
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+footer p {
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+/* Media Query básica para móviles */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+}
