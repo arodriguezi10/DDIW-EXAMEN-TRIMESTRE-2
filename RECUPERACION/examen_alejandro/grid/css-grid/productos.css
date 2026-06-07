@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    height: 13vh;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+.product-container {
+    display: grid;
+    /* Reemplaza la lógica de flex-wrap y el tamaño de las tarjetas */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    width: 100%;
+}
+
+.product-card {
+    display: grid;
+    /* Evita que los elementos internos se estiren verticalmente ocupando todo el alto */
+    grid-auto-rows: max-content;
+    justify-items: center;
+    padding: 20px;
+    border: 7px solid rgb(201, 201, 201);
+}
+
+button {
+    height: 5vh;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        /* Colapsa el header en una sola columna y centra los elementos */
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+    
+    nav {
+        display: grid;
+        /* Coloca los enlaces en columnas automáticas uno al lado del otro */
+        grid-auto-flow: column;
+        gap: 10px;
+    }
+    
+    nav a {
+        margin: 0px;
+    }
+}

@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    height: 13vh;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+.form-seccion {
+    display: grid;
+    /* justify-content centra la "pista" del grid, manteniendo el ancho de la tarjeta */
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.form-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px;
+    width: 27vw;
+    padding: 20px;
+}
+
+.form-card h2 {
+    margin-top: 35px;
+    color: #333;
+}
+
+.form-card p {
+    color: #919191;
+}
+
+.formulario {
+    display: grid;
+    /* Grid apila automáticamente los elementos en filas por defecto */
+    gap: 15px;
+}
+
+.campo {
+    display: grid;
+    text-align: left;
+}
+
+.campo label {
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+#asunto {
+    cursor: not-allowed;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.btn-enviar {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: aquamarine;
+}
+
+.mensaje-agradecimiento {
+    text-align: center;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+}
+
+@media (max-width: 480px) {
+    header {
+        /* Comportamiento responsivo para apilar el menú en móviles */
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+    
+    nav {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+    }
+    
+    nav a {
+        margin: 0px;
+    }
+
+    .form-card {
+        padding: 20px;
+        /* Corrección sugerida: adaptar el ancho en móviles */
+        width: 90vw; 
+    }
+}
