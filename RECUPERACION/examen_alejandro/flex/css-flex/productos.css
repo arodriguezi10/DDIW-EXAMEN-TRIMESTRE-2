@@ -1,7 +1,6 @@
 * {
-    padding: 3px;
-    box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
 header {
@@ -27,17 +26,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #3498db;
+  color: #3498db;
 }
 
-main{
-    padding: 0;
-    margin: 0;
-}
-
-main h1 {
-  text-align: center;
-  padding: 20px;
+main {
+  padding: 0;
   margin: 0;
 }
 
@@ -45,13 +38,26 @@ main h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 10px solid rgb(201, 201, 201);
+  gap: 10px;
+  width: 100%;
 }
-.product-card{
-    display: flex; 
-    flex-direction: column;
-    justify-content:center ;
-    align-items: center;
+.product-card {
+  flex: 1 1 250px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 7px solid rgb(201, 201, 201);
+}
+
+button {
+    height: 5vh;
+}
+
+button:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 footer {
@@ -63,4 +69,16 @@ footer {
   justify-content: center;
 }
 
-
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  nav {
+    display: flex;
+    gap: 10px;
+  }
+  nav a {
+    margin: 0px;
+  }
+}
