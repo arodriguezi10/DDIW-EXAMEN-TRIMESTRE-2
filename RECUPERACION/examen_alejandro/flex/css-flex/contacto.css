@@ -3,15 +3,18 @@
     font-family: "Segoe UI", sans-serif;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
+    /* Buena práctica: asegura un color de fondo base para contraste */
+    background-color: #f4f4f9; 
 }
 
 header {
     background-color: #000000;
     color: #ffffff;
-    height: 13vh;
+    /* Cambiado de height fijo a min-height para evitar desbordamientos en móvil */
+    min-height: 13vh; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,62 +37,80 @@ nav a:hover {
     color: #3498db;
 }
 
-.form-seccion{
+.form-seccion {
     display: flex;
     align-content: center;
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    /* Añadimos padding lateral por si la pantalla es muy pequeña */
+    padding: 0 15px; 
 }
 
-.form-card{
+.form-card {
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px;
-    width: 27vw;
-    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suavizada */
+    
+    /* --- LA CORRECCIÓN CLAVE --- */
+    width: 100%; 
+    max-width: 450px; /* Tope máximo en escritorio */
+    
+    padding: 30px;
 }
 
-.form-card h2{
-    margin-top: 35px;
+.form-card h2 {
+    margin-top: 0; /* Limpiado el margin-top excesivo */
     color: #333;
 }
 
-.form-card p{
+.form-card p {
     color: #919191;
+    line-height: 1.5; /* Mejora la legibilidad */
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 20px;
 }
 
-.campo{
+.campo {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
-.campo label{
+
+.campo label {
     font-weight: bold;
     font-size: 0.85rem;
     margin-bottom: 5px;
     color: #444;
 }
 
-#asunto{
-    cursor:not-allowed;
+#asunto {
+    cursor: not-allowed;
+    background-color: #e9ecef; /* Feedback visual extra para inputs deshabilitados */
+    color: #6c757d;
 }
 
-input, textarea{
+input, textarea {
     padding: 10px;
-    border: 1px solid;
+    border: 1px solid #ccc; /* Color de borde más suave */
     border-radius: 4px;
     font-size: 1rem;
     width: 100%;
     box-sizing: border-box;
     resize: vertical;
 }
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db; /* Feedback visual al escribir */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
 .btn-enviar {
     background-color: #3498db;
     color: #ffffff;
@@ -101,12 +122,14 @@ input, textarea{
     transition: background 0.3s;
     margin-top: 10px;
 }
-.btn-enviar:hover{
-    background-color: aquamarine;
+
+.btn-enviar:hover {
+    background-color: #2980b9; /* Un azul más oscuro es mejor UX que aquamarine */
 }
 
-.mensaje-agradecimiento{
+.mensaje-agradecimiento {
     text-align: center;
+    margin-top: 15px;
 }
 
 footer {
@@ -118,9 +141,15 @@ footer {
     justify-content: center;
 }
 
-@media (max-width: 480px){
-    .form-card{
-        padding:20px;
-        
+/* --- Media Query para Móviles --- */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Apila el título y el menú */
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .form-card {
+        padding: 20px; /* Reduce un poco el espaciado interior para aprovechar la pantalla */
     }
 }

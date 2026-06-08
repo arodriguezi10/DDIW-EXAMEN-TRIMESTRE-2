@@ -105,28 +105,18 @@
   }
   
   /* --- Media Queries --- */
-  @media (max-width: 600px) {
-    nav ul {
-      gap: 15px; 
-    }
-  
-    a {
-      font-size: 0.9rem;
-    }
-  
-    .button-container {
-      padding: 40px 15px; 
-      /* Permite que en móviles muy estrechos la tarjeta baje del mínimo de 250px si es necesario */
-      grid-template-columns: repeat(auto-fit, minmax(100%, 280px));
-    }
-  
-    .button {
-      height: auto; 
-      padding: 30px 10px;
-    }
-  
-    .button img {
-      width: 150px;
-      height: 150px;
-    }
+/* --- Media Queries --- */
+@media (max-width: 600px) {
+  nav ul {
+    gap: 15px; 
   }
+
+  a {
+    font-size: 0.9rem;
+  }
+
+  .button-container {
+    padding: 40px 15px; 
+    grid-template-columns: 280px; 
+  }
+}
